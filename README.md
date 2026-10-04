@@ -24,7 +24,7 @@ Open `http://127.0.0.1:8000/`. Serve over HTTP: asset paths start at the domain 
 - `work/financial-filings/` — public financial-data case study.
 - `work/shared-ai-knowledge/` — conceptual AI integration case study.
 - `#motion` — digital marketing and advertising showcase: ROOT product film (9:16) and VERO identity film (4:5).
-- `assets/video/` — web-optimized 1080p MP4s, poster images and English visual-description tracks. Native player controls, full-size playback and downloads; no autoplay or video preload.
+- `assets/video/` — 720px-wide H.264 Constrained Baseline Level 3.1 playback copies with bounded bitrate, plus separate 1080p downloads, poster images and English visual-description tracks. Native controls and full-size links use the compatible copies; no autoplay or video preload.
 - `assets/` — shared stylesheet, real public product previews, fonts and social preview.
 - `404.html`, `sitemap.xml`, `robots.txt`, `.nojekyll` — static hosting support.
 
@@ -38,4 +38,4 @@ Product images are screenshots of the existing public sites. VERO’s official s
 
 ## Quality checks
 
-Before publication, the site was checked in Chromium and WebKit at desktop and mobile widths, without JavaScript, and with automated WCAG accessibility checks. Release tooling and private review records are maintained separately from this public export.
+Before publication, the site was checked in desktop Chromium and WebKit at desktop and mobile widths, without JavaScript, and with automated WCAG accessibility checks. Touch and constrained-network checks use desktop Chrome mobile emulation; these do not establish physical Android-device compatibility. Media-profile regressions enforce Baseline Level 3.1 on default playback. Release tooling and private review records are maintained separately from this public export.
